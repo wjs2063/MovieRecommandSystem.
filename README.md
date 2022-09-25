@@ -5,6 +5,10 @@ airflow를 이용한 영화추천시스템
 ## 활용 데이터셋 
 kaggle 영화 데이터셋 : https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=ratings.csv
 
+## USAGE 
+위 데이터 링크에서 모든파일을 다운받고 app.config['file_path'] 부분에 해당 ratings.csv 파일 설정해주면 쉽게 데이터를 얻을수있다.
+
+
 ## 파일 설명 
 
 ### app.py   
