@@ -10,6 +10,8 @@ kaggle 영화 데이터셋 : https://www.kaggle.com/datasets/rounakbanik/the-mov
 
 
 ## 파일 설명 
+ratings.csv -> 2009 - 11 -01 ~ 2015 - 03 -10 까지 의 데이터
+
 
 ### app.py   
 : Flask api 로 ratings.csv 파일을 엔드포인트로 제공   
