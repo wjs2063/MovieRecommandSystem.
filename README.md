@@ -22,3 +22,5 @@ end_date
 를 활용하여 원하는 날짜 간격 그리고 개수를 지정하여 제공  
 
 HTTP Basic Auth 를 통하여  간단한 보안 생성
+
+session 요청을 할때 항상 session.auth() 를 추가해주어야 http 401 에러가 뜨지않는다. 함수안에 캡슐화를 시
