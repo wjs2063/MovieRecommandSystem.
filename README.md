@@ -14,3 +14,5 @@ limit
 start_date   
 end_date   
 를 활용하여 원하는 날짜 간격 그리고 개수를 지정하여 제공  
+
+HTTP Basic Auth 를 통하여  간단한 보안 생성
