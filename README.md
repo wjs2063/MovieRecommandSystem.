@@ -1,5 +1,5 @@
 # MovieRecommandSystem.
-airflow를 이용한 영화추천시스템
+airflow, Flask 이용한 영화추천시스템
 
 
 ## 활용 데이터셋 
