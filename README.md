@@ -7,7 +7,12 @@ kaggle 영화 데이터셋 : https://www.kaggle.com/datasets/rounakbanik/the-mov
 
 ## USAGE 
 위 데이터 링크에서 모든파일을 다운받고 app.config['file_path'] 부분에 해당 ratings.csv 파일 설정해주면 쉽게 데이터를 얻을수있다.  
+1. rating file 
 example :  http://127.0.0.1:5000/ratings?start_date=2012-09-09&end_date=2012-10-01  
+
+2. credit file 
+example : http://127.0.0.1:5000/credits 
+
 
 ## 파일 설명 
 ratings.csv -> 1995-01-09 ~ 2017-08-04 까지 의 데이터
