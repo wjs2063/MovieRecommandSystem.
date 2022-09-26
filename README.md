@@ -10,7 +10,7 @@ kaggle 영화 데이터셋 : https://www.kaggle.com/datasets/rounakbanik/the-mov
 example :  http://127.0.0.1:5000/ratings?start_date=2012-09-09&end_date=2012-10-01  
 
 ## 파일 설명 
-ratings.csv -> 2009 - 11 -01 ~ 2015 - 03 -10 까지 의 데이터
+ratings.csv -> 1995-01-09 ~ 2017-08-04 까지 의 데이터
 
 
 ### app.py   
