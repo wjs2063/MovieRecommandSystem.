@@ -14,6 +14,32 @@ os.environ['API_PASSWORD'] = "airflow"
 # literal_eval : string 형식의 dict 를 dict로 변
 
 
+# 날짜 형식으로 변환
+def _date_to_timestamp(date_str):
+    if date_str is None:
+        return None
+    return int(time.mktime(time.strptime(date_str, "%Y-%m-%d")))
+
+
+def convert_datetime(unixtime):
+    """
+    
+
+    Parameters
+    ----------
+    unixtime : TYPE
+        INT , UNIXTIME
+
+    Returns
+    -------
+    date : TYPE 
+        str, 
+
+    """
+    date = datetime.datetime.fromtimestamp(unixtime).strftime('%Y-%m-%d')
+    return date # format : str
+
+
 def unpacking_genre(x):
     '''
     Parameters
@@ -256,30 +282,5 @@ def keyword_json():
     
 
 
-
-
-# 날짜 형식으로 변환
-def _date_to_timestamp(date_str):
-    if date_str is None:
-        return None
-    return int(time.mktime(time.strptime(date_str, "%Y-%m-%d")))
-def convert_datetime(unixtime):
-    """
-    
-
-    Parameters
-    ----------
-    unixtime : TYPE
-        INT , UNIXTIME
-
-    Returns
-    -------
-    date : TYPE 
-        str, 
-
-    """
-    date = datetime.datetime.fromtimestamp(unixtime).strftime('%Y-%m-%d')
-    return date # format : str
-
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000)
+    app.run(host="127.0.0.1", port = 7000)
