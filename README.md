@@ -1,6 +1,12 @@
 # MovieRecommandSystem.
 airflow, Flask 이용한 영화추천시스템
 
+### 개발환경 
+Anaconda VM 
+
+### 사용 Tool 
+airflow,Python,Flask
+
 
 ## 활용 데이터셋 
 kaggle 영화 데이터셋 : https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=ratings.csv
