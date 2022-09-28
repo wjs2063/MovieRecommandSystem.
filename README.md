@@ -36,3 +36,7 @@ session 요청을 할때 항상 session.auth() 를 추가해주어야 http 401 �
 
 추천시스템을 만들때 일별 영화순위는 ratings.csv 파일로 작성하면 큰 문제가없다. 하지만 개인별로 장르에 대한 선호도, 영화배우에 대한 선호도를 계산하여 추천시스템에 반영한다면 
 pd.merge 과정은 필연적이다. merge 과정은 key 값을 기준으로 진행되기때문에 O(n^2) 시간이 소요되므로 성능에 좋지못하기때문에 반정규화해서 가져오는것이 성능에 이득일 것 같다. 
+
+
+### airflow Basehook
+https://airflow.apache.org/docs/apache-airflow/stable/_modules/airflow/hooks/base.html#BaseHook
