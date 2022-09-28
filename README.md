@@ -2,11 +2,27 @@
 airflow, Flask 이용한 영화추천시스템
 
 ### 개발환경 
+OS : mac m1 
 Anaconda VM 
+
+-> 배포는 Docker 이미지로 
 
 ### 사용 Tool 
 airflow,Python,Flask
 
+### VM 구축후  
+1. DB 초기화  
+```
+airflow db init 
+```
+2. 유저 생성 
+```
+airflow users create  --username [쓰고싶은이름]  --firstname jeon  --lastname jaehyeon  --role Admin  --email jahy5352@naver.com 
+```
+3. 웹서버 생성 
+```
+airflow webserver --port 8080
+```
 
 ## 활용 데이터셋 
 kaggle 영화 데이터셋 : https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=ratings.csv
@@ -37,6 +53,8 @@ HTTP Basic Auth 를 통하여  간단한 보안 생성
 
 session 요청을 할때 항상 session.auth() 를 추가해주어야 http 401 에러가 뜨지않는다. 함수안에 캡슐화를 시
 
+이러한 movie_api 를  캡슐화 + 제활용 가능하게 Hook 으로 
+
 --------------------------------------------------------------------------------------
 ### 정규화 vs 반정규화 
 
@@ -45,4 +63,12 @@ pd.merge 과정은 필연적이다. merge 과정은 key 값을 기준으로 진�
 
 
 ### airflow Basehook
-https://airflow.apache.org/docs/apache-airflow/stable/_modules/airflow/hooks/base.html#BaseHook
+https://airflow.apache.org/docs/apache-airflow/stable/_modules/airflow/hooks/base.html#BaseHook 
+
+### DB Choosing 
+https://airflow.apache.org/docs/apache-airflow/2.4.0/howto/set-up-database.html 
+공식문서에서 Postgresql or mysql 추천 
+
+### WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+
+
